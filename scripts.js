@@ -16,4 +16,11 @@ function handleMouseMove(e) {
   });
 }
 
+function handleResize() {
+  windowWitdh = window.innerWidth;
+  console.log(windowWitdh);
+  minimumDivision = windowWitdh / numberOfPhotos;
+}
+
 window.addEventListener('mousemove', handleMouseMove);
+window.addEventListener('resize', handleResize);
